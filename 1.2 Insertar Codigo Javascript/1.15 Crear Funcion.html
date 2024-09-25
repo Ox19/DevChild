@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var resultado = 0
+        var tabla = prompt("Que tabla quieres calcular?")
+        crear_tabla() //es la forma de llamar a la funcion
+
+        function crear_tabla(){
+            document.write("Tabla del " + tabla + "<br>")
+            for (let i = 0; i <= 10; i++) {
+                resultado = i * tabla
+                document.write(tabla + " x " + i + " = "+  + resultado + "<br>")
+            }
+        }
+    </script>
+</body>
+</html>

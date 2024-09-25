@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var mascota = new Object();
+        mascota = {
+            nombre: "Maddy",
+            edad:"1 año",
+            animal:"perro",
+            raza:"schnauzer",
+        }
+        document.write(mascota.nombre+"<br>")
+        document.write(mascota.edad+"<br>")
+        document.write(mascota.animal+"<br>")
+        document.write(mascota.raza+"<br>")
+        mascota.color = "sal pimienta";
+        document.write(mascota.color+"<br>")
+        delete mascota.edad;
+        document.write(mascota.edad+"<br>")
+    </script>
+</body>
+</html>

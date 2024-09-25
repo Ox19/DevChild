@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var numero = undefined
+        var aleatorio = Math.floor(Math.random()*100)
+        var intentos = 1
+        var nombre = prompt("Adivina el nùmero, ¿Còmo te llamas?")
+        alert(nombre + ", estoy pensando en un nùmero entre 1 y 100. Intenta adivinarlo.")
+        while(intentos <= 10 && numero != aleatorio){
+            numero = prompt("Digita tu numero entre 0 y 99")
+            if(numero > aleatorio){
+                alert("Tu numero es mayor al que estoy pensando")
+            }
+            if (numero < aleatorio) {
+                alert("Tu numero es menor al que estoy pensando")
+            }
+            if(numero == aleatorio){
+                alert("¡Felicidades! Adivinaste el numero en " + intentos + " intentos")
+            }
+            intentos++;
+            if(intentos == 10){
+                alert("Lo siento, has agotado tus 10 intentos. El numero era " + aleatorio)
+            }
+        }
+    </script>
+</body>
+</html>

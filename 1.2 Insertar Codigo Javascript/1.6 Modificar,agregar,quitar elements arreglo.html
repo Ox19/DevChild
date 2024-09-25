@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var videojuegos = ["Mario", "Zelda", "Metroid", "Donkey Kong"];
+        document.write(videojuegos+"<br>");//escribimos el arreglo
+        document.write(videojuegos[1]+"<br>");//escribimos un elemento
+        videojuegos.push("Pacman");//agregamos un elemento al final
+        document.write(videojuegos+"<br>");
+        videojuegos.unshift("Tetris");//agregamos un elemento
+        document.write(videojuegos+"<br>");
+        videojuegos.pop();//quitamos el ultimo elemento
+        document.write(videojuegos+"<br>");
+        videojuegos.shift();//quitamos el primer elemento
+        document.write(videojuegos + '<br>');
+        document.write(videojuegos.indexOf('Metroid'))
+    </script>
+</body>
+</html>
